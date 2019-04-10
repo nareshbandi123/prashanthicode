@@ -1,0 +1,525 @@
+﻿<repository
+id="6a8a46b8-3493-4005-af89-f3f4c9c1cdfe"
+name="BVTRepo"
+rxversion="8.2">
+	<codegen
+	classname="BVTRepo"
+	namespace="AutomationSQLdm.BVT">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="66deb29b-1505-4aae-ba1c-80d360e98697"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="c7bdee8e-d698-4d20-93b9-3dab5c46ab8b"
+		isrooted="True"
+		name="Application"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="81683638-41e0-4e76-9d12-70a576db58c0"
+			name="txtSQLdmToday"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']//button[@automationid='toolBarTodayButton']/text[@caption='SQLDM Today']
+			</item>
+			<item
+			capname="text"
+			id="b7d1620e-9099-41d5-bc09-7448ed529c6a"
+			name="SQLdmPane"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//container[@controlname='contentPanel.ClientArea']/toolbar[@controltypename='HeaderStrip']/text
+			</item>
+			<item
+			capname="treeitem"
+			id="f26804dd-9b24-4517-831e-43eef2f89e80"
+			name="AllServers"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/?/?/treeitem[@accessiblename='All Servers']
+			</item>
+			<basepath>
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="4d417360-c4e7-4e3d-b591-012bb11139cc"
+		isrooted="True"
+		name="SQLdm"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="radiobutton"
+			id="cd1b304b-88bd-448d-84b1-a47b878dc059"
+			name="radioSummary"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Sessions']/toolbar[@automationid='sessionsTabViewsGroup']/container[@caption='']/radiobutton[1]
+			</item>
+			<item
+			capname="radiobutton"
+			id="514075e6-e49f-4bb1-bd46-69b8d3efb092"
+			name="radioDetails"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Sessions']/toolbar[@automationid='sessionsTabViewsGroup']/container[@caption='']/radiobutton[2]
+			</item>
+			<item
+			capname="radiobutton"
+			id="d75d8732-b228-4244-aab9-8017060a5a68"
+			name="radioLocks"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Sessions']/toolbar[@automationid='sessionsTabViewsGroup']/container[@caption='']/radiobutton[3]
+			</item>
+			<item
+			capname="radiobutton"
+			id="5a261ba9-9b18-496a-b66a-95259e538e80"
+			name="radioBlocks"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Sessions']/toolbar[@automationid='sessionsTabViewsGroup']/container[@caption='']/radiobutton[4]
+			</item>
+			<item
+			capname="text"
+			id="663fbee2-114e-49d3-aacc-b7bf5f29bbab"
+			name="txtSUMResponseTime"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='SessionsSummaryView']//toolbar[@controlname='responseTimeHeaderStrip']/text[@accessiblename='Response Time']
+			</item>
+			<item
+			capname="text"
+			id="80da4777-721e-46ce-9870-88266c33f818"
+			name="txtBLBlockReports"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='SessionsBlockingView']//container[@controlname='locksDeadLocksListSplitContainer']/container[@controlname='panel1']/toolbar[@controlname='headerStrip1']/text[@accessiblename='Block Reports']
+			</item>
+			<item
+			capname="menuitem"
+			id="e900c093-844d-45ca-a573-4f4964bbcb44"
+			name="ddlLOLockStatistics"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='SessionsLocksView']//toolbar[@controlname='lockStatisticsHeaderStrip']/menuitem[@accessiblename='Lock Statistics: Requests']
+			</item>
+			<item
+			capname="text"
+			id="56c75828-3c30-400c-8197-47603a4c5e9a"
+			name="txtDEDetails"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='SessionsDetailsView']//toolbar[@controlname='detailsHeaderStrip']/text[@accessiblename='Details']
+			</item>
+			<item
+			capname="text"
+			id="725ec95a-c67a-4aa1-9d9c-b1b39927965d"
+			name="txtSumSessions"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='SessionsSummaryView']//toolbar[@controlname='sessionsHeaderStrip']/text[@accessiblename='Sessions']
+			</item>
+			<item
+			capname="button"
+			id="87ac7a77-6a65-4e6a-9ce3-8f445d777780"
+			name="btnDBCPU"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='CpuControl']/toolbar[@controlname='dashboardHeaderStrip']/button[@accessiblename='CPU']
+			</item>
+			<item
+			capname="text"
+			id="db6e5de0-cecb-4842-b6dc-e0d193e37d4e"
+			name="txtSessions"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Sessions']/container[@automationid='tabItemText']/text[@caption='Sessions']
+			</item>
+			<item
+			capname="tabpage"
+			id="9fad9722-6123-4984-afb3-15f14392dcbe"
+			name="tabSessions"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Sessions']
+			</item>
+			<item
+			capname="tabpage"
+			id="081f7e8e-d6eb-4b2e-a5bf-fa6eab8b99f3"
+			name="tabQueries"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']
+			</item>
+			<item
+			capname="tabpage"
+			id="fed9413b-d907-43cb-b796-874d7dc18103"
+			name="tabResources"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Resources']
+			</item>
+			<item
+			capname="tabpage"
+			id="434665c4-0a84-4828-b806-ebfe851ef03d"
+			name="tabDatabases"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']
+			</item>
+			<item
+			capname="tabpage"
+			id="9d3a0b79-3b63-43a3-8a85-a01f0fc4bcb4"
+			name="tabServices"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Services']
+			</item>
+			<item
+			capname="tabpage"
+			id="dd78e61f-4677-45d1-b273-8ffe4a158014"
+			name="tabLogs"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Logs']
+			</item>
+			<item
+			capname="tabpage"
+			id="44c09e8d-d50a-40a0-8de6-9978499ee37a"
+			name="tabAnalyze"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Analyze']
+			</item>
+			<item
+			capname="tabpage"
+			id="08c84396-3698-49d2-be5b-5c07585b8526"
+			name="tabOverView"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Overview']
+			</item>
+			<folder
+			capname="toolbar"
+			id="b4198f1b-1b59-48c6-abc4-9ecd0d0d6a75"
+			isrooted="True"
+			name="OverViewTab"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="radiobutton"
+				id="2236b86c-e275-4651-a7ab-4ba34c4cba50"
+				name="rgOVDashboard"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Overview']/toolbar[@automationid='overviewTabViewsGroup']//container[@caption='']/radiobutton[1]
+				</item>
+				<item
+				capname="radiobutton"
+				id="beb74a52-7899-413a-aec6-db6ab2c34c7f"
+				name="rgOVDetails"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Overview']/toolbar[@automationid='overviewTabViewsGroup']//container[@caption='']/radiobutton[2]
+				</item>
+				<item
+				capname="radiobutton"
+				id="4616c4b1-19c7-4090-bcf9-94e8a38b8797"
+				name="rgOVConfiguration"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Overview']/toolbar[@automationid='overviewTabViewsGroup']//container[@caption='']/radiobutton[3]
+				</item>
+				<item
+				capname="radiobutton"
+				id="9e38cd1c-b090-4390-af5c-ae998e31ec2a"
+				name="rgOVActiveAlerts"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Overview']/toolbar[@automationid='overviewTabViewsGroup']//container[@caption='']/radiobutton[4]
+				</item>
+				<item
+				capname="radiobutton"
+				id="16d182e7-83b1-44c1-8708-f39926a9f9df"
+				name="rgOVTimeLine"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Overview']/toolbar[@automationid='overviewTabViewsGroup']//container[@caption='']/radiobutton[5]
+				</item>
+				<basepath>
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Overview']/toolbar[@automationid='overviewTabViewsGroup']
+				</basepath>
+			</folder>
+			<folder
+			capname="toolbar"
+			id="95f06b54-ee5d-42ee-951d-5c8c99f9e8e6"
+			isrooted="True"
+			name="QueriesTab"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="radiobutton"
+				id="7dd99cd2-b1a7-4a7c-9007-d91eff9643b7"
+				name="rgQUESignatureMode"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']//container[@caption='']/radiobutton[1]
+				</item>
+				<item
+				capname="radiobutton"
+				id="80c94682-d7e1-4252-8473-887e936b8134"
+				name="rgQUEStatementMode"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[2]
+				</item>
+				<item
+				capname="radiobutton"
+				id="5e4d9ab4-26ec-4a32-8567-35290d1b5b50"
+				name="rgQUEQueryHistory"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[3]
+				</item>
+				<item
+				capname="radiobutton"
+				id="64b1065c-660b-44a2-8e80-879274526008"
+				name="rgQUEQueryWaits"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[4]
+				</item>
+				<basepath>
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']
+				</basepath>
+			</folder>
+			<folder
+			capname="toolbar"
+			id="6bc81376-9a3e-4f1d-9ad0-9cf4e4d3b4df"
+			isrooted="True"
+			name="DatabasesTab"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="radiobutton"
+				id="be671221-5fd4-4080-98ca-d4757e565a05"
+				name="rgDBSummary"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']/toolbar[@automationid='databasesTabViewsGroup']//container[@caption='']/radiobutton[1]
+				</item>
+				<item
+				capname="radiobutton"
+				id="24b488b6-7b3c-432e-bf70-7b76a2468c74"
+				name="rgDBAvailabillityGroup"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']/toolbar[@automationid='databasesTabViewsGroup']//container[@caption='']/radiobutton[2]
+				</item>
+				<item
+				capname="radiobutton"
+				id="f6b125b6-7085-4476-b325-e5a20a7779d1"
+				name="rgDBTempDBSummary"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']/toolbar[@automationid='databasesTabViewsGroup']//container[@caption='']/radiobutton[3]
+				</item>
+				<item
+				capname="radiobutton"
+				id="e1614898-17f5-4a54-93dc-0c46cea8c173"
+				name="rgDBConfiguration"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']/toolbar[@automationid='databasesTabViewsGroup']//container[@caption='']/radiobutton[4]
+				</item>
+				<item
+				capname="radiobutton"
+				id="0bea0d6f-7bb6-4183-a0c5-47027333d500"
+				name="rgDBFiles"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']/toolbar[@automationid='databasesTabViewsGroup']//container[@caption='']/radiobutton[5]
+				</item>
+				<item
+				capname="radiobutton"
+				id="8c743482-1cd1-4375-ae22-f5eb007de01e"
+				name="rgDBBackupsAndRestores"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']/toolbar[@automationid='databasesTabViewsGroup']//container[@caption='']/radiobutton[6]
+				</item>
+				<item
+				capname="radiobutton"
+				id="5eb32d53-29e0-4b07-8f17-5b52ebaede7f"
+				name="rgDBTablesAndIndexes"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']/toolbar[@automationid='databasesTabViewsGroup']//container[@caption='']/radiobutton[7]
+				</item>
+				<item
+				capname="radiobutton"
+				id="9469a46a-abda-45fd-9152-0db10a601777"
+				name="rgDBMirroring"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']/toolbar[@automationid='databasesTabViewsGroup']//container[@caption='']/radiobutton[8]
+				</item>
+				<basepath>
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Databases']/toolbar[@automationid='databasesTabViewsGroup']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="fe7325d7-184c-4c5c-acdd-2b46aeca7cf0"
+			isrooted="True"
+			name="View"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="button"
+				id="ee9dd84e-30a5-42eb-ac9d-9307df06d215"
+				name="btnOVDBCPU"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='CpuControl']/toolbar[@controlname='dashboardHeaderStrip']/button[@accessiblename='CPU']
+				</item>
+				<item
+				capname="text"
+				id="07032821-6fe8-47f7-883c-6b58c53bdf66"
+				name="txtOVCONDetails"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='ServerConfigurationView']//toolbar[@controlname='detailsHeaderStrip']/text[@accessiblename='Details']
+				</item>
+				<item
+				capname="text"
+				id="5537519e-ad66-4f73-b15c-9f4ac7aeb0b3"
+				name="txtOVAADetails"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='ActiveAlertsView']//toolbar[@controlname='detailsHeaderStrip']/text[@accessiblename='Details']
+				</item>
+				<item
+				capname="text"
+				id="fddebd24-6883-4669-bce3-18c7b5b4ba44"
+				name="txtQUESIGMODEEventOccurrences"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//toolbar[@controlname='queryMonitorGridHeaderStrip']/text[@accessiblename='Event Occurrences']
+				</item>
+				<item
+				capname="tabpage"
+				id="2570b7ff-c43f-46a9-85ce-c60e1ba9f17b"
+				name="tabQUEQeryWaits"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//tabpagelist[@accessiblerole='PageTabList']/tabpage[@accessiblename='Waits']
+				</item>
+				<item
+				capname="text"
+				id="8e3a64c3-cdb6-4327-b070-4726320de259"
+				name="txtOVDEChart"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='_child']/container[@controlname='ServerDetailsView']//toolbar[@controlname='chartHeaderStrip']/text[@accessiblename='Chart']
+				</item>
+				<basepath>
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']
+				</basepath>
+			</folder>
+			<item
+			capname="text"
+			id="b183b56d-66a9-42e1-b24d-657c5ff85e84"
+			name="txtOVTLDatabases"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='viewHost']/text[@automationid='label1']
+			</item>
+			<item
+			capname="text"
+			id="1ac53496-5430-4106-be56-730602c18cbb"
+			name="txtQUEQHQuerySignature"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/container[2]/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//toolbar[@accessiblename='N/A']/text[@accessiblename='Query Signature:']
+			</item>
+			<item
+			capname="table"
+			id="97717507-ac04-4b57-ad21-592e9f89d219"
+			name="tblQueryEventOccerrances"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//container[@controlname='splitContainer']//table[@accessiblename='Loading...']
+			</item>
+			<item
+			capname="button"
+			id="4b9c1ef9-ca0e-4511-9555-ec765ea99f9f"
+			name="btnQWQueryWaitsOverTime"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//toolbar[@controlname='headerStrip1']/button[@accessiblename='Query Waits Over Time']
+			</item>
+			<item
+			capname="table"
+			id="a46dff0c-7ffe-4991-b4cc-be263d7d93ca"
+			name="tblDBSSummary"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='DatabasesSummaryView']//table[@accessiblerole='Table']
+			</item>
+			<item
+			capname="table"
+			id="7d37f544-3be8-4586-8b73-df846e0d5e68"
+			name="tblDBSTempDBSummary"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/?/?/container[@controlname='DatabasesTempdbView_Fill_Panel']//table[@accessiblename='No Data Available']
+			</item>
+			<item
+			capname="table"
+			id="195a2ec4-962e-4d2e-b2b7-76d747894459"
+			name="tblDBSConfiguration"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//table[@accessiblerole='Table']
+			</item>
+			<item
+			capname="table"
+			id="8dd4598b-05d8-4588-a263-3ca1bb8adc88"
+			name="tblDBSFiles"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='DatabasesFilesView']//table[@accessiblename='Loading...']
+			</item>
+			<item
+			capname="table"
+			id="00c0bfef-1197-4e2f-ae91-21982433f22a"
+			name="tblDBSTablesAndIndexes"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='DatabasesTablesIndexesView']//table[@accessiblerole='Table']
+			</item>
+			<item
+			capname="table"
+			id="cb330ad6-2a18-4c2f-828f-68d91269413d"
+			name="tblDBSMirroring"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='DatabasesBackupRestoreHistoryView']//table[@accessiblerole='Table']
+			</item>
+			<item
+			capname="table"
+			id="44dd3d35-b3a1-4d64-b186-1a9a11f20642"
+			name="tblDBSBackupsAndRestores"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='DatabasesBackupRestoreHistoryView']//table[@accessiblerole='Table']
+			</item>
+			<item
+			capname="table"
+			id="06f034e2-34f6-435b-9ed7-32dadab606c3"
+			name="tblDBSServiceSummary"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='ServicesSummaryView']//table[@accessiblerole='Table']
+			</item>
+			<folder
+			capname="toolbar"
+			id="68c28ebf-8c92-4152-92ba-0e18414f85a3"
+			isrooted="True"
+			name="ServicesTab"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="radiobutton"
+				id="0488712f-bc6c-43c7-8521-409d62190f17"
+				name="rgSERSummary"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Services']/toolbar[@automationid='servicesTabViewsGroup']//toolbar[@automationid='ribbon']/tabpage[@automationid='Services']/toolbar[@automationid='servicesTabViewsGroup']/container[@caption='']/radiobutton[1]
+				</item>
+				<item
+				capname="radiobutton"
+				id="cae5e8ec-faca-4ec8-a32e-da06214a7d71"
+				name="rgSERSqlAgentJobs"
+				searchtimeout="30000ms">
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Services']/toolbar[@automationid='servicesTabViewsGroup']//toolbar[@automationid='ribbon']/tabpage[@automationid='Services']/toolbar[@automationid='servicesTabViewsGroup']/container[@caption='']/radiobutton[2]
+				</item>
+				<basepath>
+					//form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Services']/toolbar[@automationid='servicesTabViewsGroup']
+				</basepath>
+			</folder>
+			<item
+			capname="table"
+			id="8d26c84a-cd04-4d47-a0ad-c92138d98a34"
+			name="tblDBSServiceSqlAgentJobs"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='ServicesSqlAgentJobsView']//table[@accessiblerole='Table']
+			</item>
+			<item
+			capname="container"
+			id="9706d0c8-814f-4644-bd54-c8058e9ffe34"
+			name="tblDBSServicesJobHistory"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//table[@accessiblename='Loading...']/container[@accessiblename='Data Area']/container[@accessiblename='Scrolling Region']
+			</item>
+			<basepath>
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']
+			</basepath>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

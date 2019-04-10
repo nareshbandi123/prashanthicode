@@ -1,0 +1,33 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{61F99090-53F7-41D0-9F8A-6FC8C2262E52}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>435ace51-31ae-4bef-bf4d-5d490d806462</string>
+      <string>2147979c-ff57-449a-a5ca-5f538b35b477</string>
+      <string>8843c3a2-46aa-462a-a638-4b28b8e4ebba</string>
+      <string>39e2a96f-f80d-49e7-ac86-c7c127dce04a</string>
+      <string>9c011c3d-80a5-4919-ae0e-d140a584f992</string>
+      <string>507e1fe9-b3aa-4282-8307-c5e66a10f8d3</string>
+      <string>7b9fbf10-a042-432e-9e04-1cdc7a8d3abd</string>
+      <string>4111d808-51c3-433a-939b-9d26c6cd0de9</string>
+      <string>d1768a1d-b09a-4ad6-812d-8a8992841931</string>
+      <string>1547d1f9-20da-494f-9a40-8022dbdc47b8</string>
+      <string>e68d4157-10af-40a5-a364-541e5b41e18d</string>
+      <string>2393e6f1-1261-4d50-a05a-2442c4664fd5</string>
+      <string>2a735146-a70b-4f67-a2e5-60f14516640f</string>
+      <string>b2a1c7cc-b352-48b2-90e1-47fa0200635c</string>
+      <string>28d505b6-6704-4f18-ae40-dfd9c24fdcc7</string>
+      <string>501312b7-0ef0-479f-8203-40d799536f50</string>
+      <string>d2307165-0fdb-4f26-b281-ca0f4ac1544c</string>
+      <string>3765b026-6d95-4e3d-b582-2c15e3833da7</string>
+      <string>673820d4-216f-4c0d-a597-589876e57c54</string>
+      <string>447b99ef-0594-4623-859b-fc50b9413151</string>
+      <string>05a7eb2c-c01f-4b28-8723-e1fbd75a8fdf</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution AutomationSQLdm[AutomationSQLdm[BVT[]Configuration[]AutomationSQLdmRepository.rxrep[]]]]&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\BVT\TC_722126&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\Base" />
+  <StartupProject value="{61F99090-53F7-41D0-9F8A-6FC8C2262E52}" />
+</Properties>
